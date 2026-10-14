@@ -3,6 +3,23 @@
 @import "@fontsource-variable/jetbrains-mono/wght.css";
 @import "lenis/dist/lenis.css";
 
+/* Buenos Aires (Collletttivo). Drop the font files into /public/fonts (see public/fonts/README.txt).
+   Until they exist the browser silently falls back to Bricolage Grotesque (next in --font-display). */
+@font-face {
+  font-family: "Buenos Aires";
+  src: url("/fonts/BuenosAires-Regular.woff2") format("woff2"), url("/fonts/BuenosAires-Regular.otf") format("opentype");
+  font-weight: 100 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Buenos Aires";
+  src: url("/fonts/BuenosAires-Bold.woff2") format("woff2"), url("/fonts/BuenosAires-Bold.otf") format("opentype");
+  font-weight: 600 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --color-bg: #0b0b0c;
   --color-bg2: #131315;
@@ -10,7 +27,7 @@
   --color-mute: #96938b; /* 6.3:1 on bg */
   --color-line: rgb(242 239 232 / 0.14);
   --color-accent: #c6ff3d;
-  --font-display: "Bricolage Grotesque Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Buenos Aires", "Bricolage Grotesque Variable", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono Variable", ui-monospace, "SF Mono", monospace;
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 }

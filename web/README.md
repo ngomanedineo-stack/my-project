@@ -20,6 +20,9 @@ Set `site.booking` to your Cal.com/Calendly link; until then "Book a chat" opens
 Replace `public/Deneo_CV_25.pdf` to update the CV. Swap generative covers for real screens by rendering
 `<Image>` instead of `<Cover>` in `WorkStrip.tsx` and `app/work/`.
 
+## Font
+Headline/body font is **Buenos Aires** (Collletttivo). It isn't bundled: add `BuenosAires-Regular` / `BuenosAires-Bold` (`.woff2` or `.otf`) to `public/fonts/` (see the README there). Until then the site falls back to Bricolage Grotesque. After adding it, retune `.display` letter-spacing/line-height in `app/globals.css`.
+
 ## Motion system (what triggers what)
 | Piece | File | Trigger → behaviour |
 |---|---|---|
