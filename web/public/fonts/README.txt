@@ -1,12 +1,9 @@
-Buenos Aires (Collletttivo) is not bundled: add the files here, then rebuild.
+Buenos Aires (Collletttivo): put the font files in this folder.
 
-Expected names (woff2 preferred, otf also accepted):
-  BuenosAires-Regular.woff2   (or .otf)   -> used for weights 100-500 (body text)
-  BuenosAires-Bold.woff2      (or .otf)   -> used for weights 600-900 (headlines)
+The site uses these three (any of .woff2 / .woff / .ttf; woff2 preferred):
+  BuenosAires-Book     -> body text (400)
+  BuenosAires-Bold     -> headlines (700)
+  BuenosAires-Black    -> heavy accents (900)
 
-If the font has only one style, copy that file to both names.
-Convert .otf/.ttf to .woff2 with e.g. https://cloudconvert.com/otf-to-woff2 or `woff2_compress`.
-Check the font's licence for web use before publishing.
-
-After adding files, tune headline spacing in app/globals.css (.display: letter-spacing / line-height),
-which were tuned for Bricolage Grotesque.
+Italics, .eot and other weights can be copied here too but are not loaded unless you add @font-face rules for them
+in app/globals.css. Check the font's licence for web use before publishing.

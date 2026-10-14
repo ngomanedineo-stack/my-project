@@ -3,19 +3,26 @@
 @import "@fontsource-variable/jetbrains-mono/wght.css";
 @import "lenis/dist/lenis.css";
 
-/* Buenos Aires (Collletttivo). Drop the font files into /public/fonts (see public/fonts/README.txt).
-   Until they exist the browser silently falls back to Bricolage Grotesque (next in --font-display). */
+/* Buenos Aires (Collletttivo), self-hosted from /public/fonts. Book = body, Bold = headlines, Black = heavy accents.
+   Weights in between snap to the nearest face. Falls back to Bricolage Grotesque if the files are missing. */
 @font-face {
   font-family: "Buenos Aires";
-  src: url("/fonts/BuenosAires-Regular.woff2") format("woff2"), url("/fonts/BuenosAires-Regular.otf") format("opentype");
-  font-weight: 100 500;
+  src: url("/fonts/BuenosAires-Book.woff2") format("woff2"), url("/fonts/BuenosAires-Book.woff") format("woff"), url("/fonts/BuenosAires-Book.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Buenos Aires";
-  src: url("/fonts/BuenosAires-Bold.woff2") format("woff2"), url("/fonts/BuenosAires-Bold.otf") format("opentype");
-  font-weight: 600 900;
+  src: url("/fonts/BuenosAires-Bold.woff2") format("woff2"), url("/fonts/BuenosAires-Bold.woff") format("woff"), url("/fonts/BuenosAires-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Buenos Aires";
+  src: url("/fonts/BuenosAires-Black.woff2") format("woff2"), url("/fonts/BuenosAires-Black.woff") format("woff"), url("/fonts/BuenosAires-Black.ttf") format("truetype");
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }

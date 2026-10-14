@@ -21,7 +21,7 @@ Replace `public/Deneo_CV_25.pdf` to update the CV. Swap generative covers for re
 `<Image>` instead of `<Cover>` in `WorkStrip.tsx` and `app/work/`.
 
 ## Font
-Headline/body font is **Buenos Aires** (Collletttivo). It isn't bundled: add `BuenosAires-Regular` / `BuenosAires-Bold` (`.woff2` or `.otf`) to `public/fonts/` (see the README there). Until then the site falls back to Bricolage Grotesque. After adding it, retune `.display` letter-spacing/line-height in `app/globals.css`.
+Headline/body font is **Buenos Aires** (Collletttivo). It isn't bundled: add `BuenosAires-Book` / `-Bold` / `-Black` (`.woff2`, `.woff` or `.ttf`) to `public/fonts/` (see the README there). Until then the site falls back to Bricolage Grotesque. After adding it, retune `.display` letter-spacing/line-height in `app/globals.css`.
 
 ## Motion system (what triggers what)
 | Piece | File | Trigger → behaviour |
