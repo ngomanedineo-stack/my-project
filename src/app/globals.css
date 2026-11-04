@@ -1,0 +1,9 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+:root { --bg:#F7F8FA; --fg:#14202E; --card:#fff; --line:#DDE3EA; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0B1220; --fg:#E8EEF5; --card:#111B2E; --line:#27364D; } }
+body { background: var(--bg); color: var(--fg); }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 1rem; }
+.btn { min-height: 44px; min-width: 44px; padding: 0 1rem; border-radius: 10px; font-weight: 600; }
+:focus-visible { outline: 3px solid #14958A; outline-offset: 2px; }
+.skip { position:absolute; left:-999px; } .skip:focus { left: 8px; top: 8px; z-index: 50; background:#fff; color:#000; padding:8px; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
